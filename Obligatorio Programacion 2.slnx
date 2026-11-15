@@ -2,6 +2,5 @@
   <Project Path="Datos/Datos.csproj" Id="9e8d9572-c146-4328-ab54-f2ec9ed603dc" />
   <Project Path="Entities/Entities.csproj" Id="3eb6cb99-9895-447e-afe4-4d1368bfa304" />
   <Project Path="LogicaNegocio/LogicaNegocio.csproj" Id="27842c0b-ec50-4e85-853f-847856211f96" />
-  <Project Path="Obligatorio Programacion 2/Obligatorio Programacion 2.csproj" />
   <Project Path="Persistencia/Persistencia.csproj" Id="b916a439-fdd3-49b9-b280-18efdcacacea" />
 </Solution>
