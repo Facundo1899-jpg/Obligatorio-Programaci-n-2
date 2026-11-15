@@ -1,4 +1,4 @@
-﻿namespace Obligatorio_Programacion_2
+﻿namespace LogicaNegocio
 {
     public class Class1
     {

@@ -2,9 +2,12 @@
 
   <PropertyGroup>
     <TargetFramework>net10.0</TargetFramework>
-    <RootNamespace>Obligatorio_Programacion_2</RootNamespace>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
   </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Obligatorio Programacion 2\Obligatorio Programacion 2.csproj" />
+  </ItemGroup>
 
 </Project>
