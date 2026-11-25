@@ -35,167 +35,305 @@ partial class ClientesForm
 
     private void InitializeComponent()
     {
-        this.components = new System.ComponentModel.Container();
-        this.txtDocumento = new System.Windows.Forms.TextBox();
-        this.txtNombre = new System.Windows.Forms.TextBox();
-        this.txtTelefono = new System.Windows.Forms.TextBox();
-        this.txtEmail = new System.Windows.Forms.TextBox();
-        this.txtDireccion = new System.Windows.Forms.TextBox();
-        this.txtEmpresa = new System.Windows.Forms.TextBox();
-        this.cmbTipo = new System.Windows.Forms.ComboBox();
-        this.btnGuardar = new System.Windows.Forms.Button();
-        this.btnModificar = new System.Windows.Forms.Button();
-        this.btnEliminar = new System.Windows.Forms.Button();
-        this.btnLimpiar = new System.Windows.Forms.Button();
-        this.btnActualizar = new System.Windows.Forms.Button();
-        this.grilla = new System.Windows.Forms.DataGridView();
-        this.lblTitulo = new System.Windows.Forms.Label();
-        this.lbl_cmbTipo = new System.Windows.Forms.Label();
-        this.lbl_txtEmpresa = new System.Windows.Forms.Label();
-        this.lbl_txtDireccion = new System.Windows.Forms.Label();
-        this.lbl_txtEmail = new System.Windows.Forms.Label();
-        this.lbl_txtTelefono = new System.Windows.Forms.Label();
-        this.lbl_txtNombre = new System.Windows.Forms.Label();
-        this.lbl_txtDocumento = new System.Windows.Forms.Label();
-        this.panelCampos = new System.Windows.Forms.Panel();
-        this.panelBotones = new System.Windows.Forms.FlowLayoutPanel();
-        ((System.ComponentModel.ISupportInitialize)(this.grilla)).BeginInit();
-        this.SuspendLayout();
-        // Formulario
-        this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-        this.Font = new System.Drawing.Font("Segoe UI", 9.5F);
-        this.BackColor = System.Drawing.Color.FromArgb(245, 247, 250);
-        this.ClientSize = new System.Drawing.Size(1100, 720);
-        this.MinimumSize = new System.Drawing.Size(950, 650);
-        this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-        this.Text = "Gestión de clientes";
-        // Título
-        this.lblTitulo.AutoSize = false;
-        this.lblTitulo.Location = new System.Drawing.Point(20, 15);
-        this.lblTitulo.Size = new System.Drawing.Size(1050, 42);
-        this.lblTitulo.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Bold);
-        this.lblTitulo.ForeColor = System.Drawing.Color.FromArgb(35, 65, 95);
-        this.lblTitulo.Text = "GESTIÓN DE CLIENTES";
-        this.lblTitulo.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-        this.Controls.Add(this.lblTitulo);
-        // Campos
-        this.panelCampos.Location = new System.Drawing.Point(20, 65);
-        this.panelCampos.Size = new System.Drawing.Size(1050, 205);
-        this.panelCampos.Anchor = System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right;
-        this.panelCampos.BackColor = System.Drawing.Color.White;
-        this.panelCampos.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-        this.Controls.Add(this.panelCampos);
-        // Documento
-        this.txtDocumento.Location = new System.Drawing.Point(20, 22);
-        this.txtDocumento.Size = new System.Drawing.Size(220, 28);
-        this.panelCampos.Controls.Add(this.txtDocumento);
-        this.lbl_txtDocumento.Name = "lbl_txtDocumento";
-        this.lbl_txtDocumento.Text = "Documento";
-        this.lbl_txtDocumento.Location = new System.Drawing.Point(20, 0);
-        this.lbl_txtDocumento.AutoSize = true;
-        this.panelCampos.Controls.Add(this.lbl_txtDocumento);
-        // Nombre / Razón social
-        this.txtNombre.Location = new System.Drawing.Point(280, 22);
-        this.txtNombre.Size = new System.Drawing.Size(220, 28);
-        this.panelCampos.Controls.Add(this.txtNombre);
-        this.lbl_txtNombre.Name = "lbl_txtNombre";
-        this.lbl_txtNombre.Text = "Nombre / Razón social";
-        this.lbl_txtNombre.Location = new System.Drawing.Point(280, 0);
-        this.lbl_txtNombre.AutoSize = true;
-        this.panelCampos.Controls.Add(this.lbl_txtNombre);
-        // Teléfono
-        this.txtTelefono.Location = new System.Drawing.Point(540, 22);
-        this.txtTelefono.Size = new System.Drawing.Size(220, 28);
-        this.panelCampos.Controls.Add(this.txtTelefono);
-        this.lbl_txtTelefono.Name = "lbl_txtTelefono";
-        this.lbl_txtTelefono.Text = "Teléfono";
-        this.lbl_txtTelefono.Location = new System.Drawing.Point(540, 0);
-        this.lbl_txtTelefono.AutoSize = true;
-        this.panelCampos.Controls.Add(this.lbl_txtTelefono);
-        // Correo electrónico
-        this.txtEmail.Location = new System.Drawing.Point(20, 92);
-        this.txtEmail.Size = new System.Drawing.Size(220, 28);
-        this.panelCampos.Controls.Add(this.txtEmail);
-        this.lbl_txtEmail.Name = "lbl_txtEmail";
-        this.lbl_txtEmail.Text = "Correo electrónico";
-        this.lbl_txtEmail.Location = new System.Drawing.Point(20, 70);
-        this.lbl_txtEmail.AutoSize = true;
-        this.panelCampos.Controls.Add(this.lbl_txtEmail);
-        // Dirección
-        this.txtDireccion.Location = new System.Drawing.Point(280, 92);
-        this.txtDireccion.Size = new System.Drawing.Size(220, 28);
-        this.panelCampos.Controls.Add(this.txtDireccion);
-        this.lbl_txtDireccion.Name = "lbl_txtDireccion";
-        this.lbl_txtDireccion.Text = "Dirección";
-        this.lbl_txtDireccion.Location = new System.Drawing.Point(280, 70);
-        this.lbl_txtDireccion.AutoSize = true;
-        this.panelCampos.Controls.Add(this.lbl_txtDireccion);
-        // Empresa (si corresponde)
-        this.txtEmpresa.Location = new System.Drawing.Point(540, 92);
-        this.txtEmpresa.Size = new System.Drawing.Size(220, 28);
-        this.panelCampos.Controls.Add(this.txtEmpresa);
-        this.lbl_txtEmpresa.Name = "lbl_txtEmpresa";
-        this.lbl_txtEmpresa.Text = "Empresa (si corresponde)";
-        this.lbl_txtEmpresa.Location = new System.Drawing.Point(540, 70);
-        this.lbl_txtEmpresa.AutoSize = true;
-        this.panelCampos.Controls.Add(this.lbl_txtEmpresa);
-        // Tipo de cliente
-        this.cmbTipo.Location = new System.Drawing.Point(800, 22);
-        this.cmbTipo.Size = new System.Drawing.Size(210, 28);
-        this.cmbTipo.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-        this.panelCampos.Controls.Add(this.cmbTipo);
-        this.lbl_cmbTipo.Name = "lbl_cmbTipo";
-        this.lbl_cmbTipo.Text = "Tipo de cliente";
-        this.lbl_cmbTipo.Location = new System.Drawing.Point(800, 0);
-        this.lbl_cmbTipo.AutoSize = true;
-        this.panelCampos.Controls.Add(this.lbl_cmbTipo);
-        // Botones
-        this.panelBotones.Location = new System.Drawing.Point(20, 285);
-        this.panelBotones.Size = new System.Drawing.Size(1050, 55);
-        this.panelBotones.Anchor = System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right;
-        this.panelBotones.WrapContents = false;
-        this.panelBotones.Padding = new System.Windows.Forms.Padding(5);
-        this.Controls.Add(this.panelBotones);
-        this.btnGuardar.Name = "btnGuardar";
-        this.btnGuardar.Text = "Guardar";
-        this.btnGuardar.Size = new System.Drawing.Size(135, 38);
-        this.btnGuardar.Margin = new System.Windows.Forms.Padding(8, 3, 8, 3);
-        this.btnGuardar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-        this.btnGuardar.BackColor = System.Drawing.Color.FromArgb(35, 93, 150);
-        this.btnGuardar.ForeColor = System.Drawing.Color.White;
-        this.panelBotones.Controls.Add(this.btnGuardar);
-        this.btnModificar.Name = "btnModificar";
-        this.btnModificar.Text = "Modificar";
-        this.btnModificar.Size = new System.Drawing.Size(135, 38);
-        this.btnModificar.Margin = new System.Windows.Forms.Padding(8, 3, 8, 3);
-        this.btnModificar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-        this.btnModificar.BackColor = System.Drawing.Color.FromArgb(35, 93, 150);
-        this.btnModificar.ForeColor = System.Drawing.Color.White;
-        this.panelBotones.Controls.Add(this.btnModificar);
-        this.btnEliminar.Name = "btnEliminar";
-        this.btnEliminar.Text = "Eliminar";
-        this.btnEliminar.Size = new System.Drawing.Size(135, 38);
-        this.btnEliminar.Margin = new System.Windows.Forms.Padding(8, 3, 8, 3);
-        this.btnEliminar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-        this.btnEliminar.BackColor = System.Drawing.Color.FromArgb(35, 93, 150);
-        this.btnEliminar.ForeColor = System.Drawing.Color.White;
-        this.panelBotones.Controls.Add(this.btnEliminar);
-        this.btnLimpiar.Name = "btnLimpiar";
-        this.btnLimpiar.Text = "Limpiar";
-        this.btnLimpiar.Size = new System.Drawing.Size(135, 38);
-        this.btnLimpiar.Margin = new System.Windows.Forms.Padding(8, 3, 8, 3);
-        this.btnLimpiar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-        this.btnLimpiar.BackColor = System.Drawing.Color.FromArgb(35, 93, 150);
-        this.btnLimpiar.ForeColor = System.Drawing.Color.White;
-        this.panelBotones.Controls.Add(this.btnLimpiar);
-        this.btnActualizar.Name = "btnActualizar";
-        this.btnActualizar.Text = "Actualizar";
-        this.btnActualizar.Size = new System.Drawing.Size(135, 38);
-        this.btnActualizar.Margin = new System.Windows.Forms.Padding(8, 3, 8, 3);
-        this.btnActualizar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-        this.btnActualizar.BackColor = System.Drawing.Color.FromArgb(35, 93, 150);
-        this.btnActualizar.ForeColor = System.Drawing.Color.White;
-        this.panelBotones.Controls.Add(this.btnActualizar);
-        
+        txtDocumento = new TextBox();
+        txtNombre = new TextBox();
+        txtTelefono = new TextBox();
+        txtEmail = new TextBox();
+        txtDireccion = new TextBox();
+        txtEmpresa = new TextBox();
+        cmbTipo = new ComboBox();
+        btnGuardar = new Button();
+        btnModificar = new Button();
+        btnEliminar = new Button();
+        btnLimpiar = new Button();
+        btnActualizar = new Button();
+        grilla = new DataGridView();
+        lblTitulo = new Label();
+        lbl_cmbTipo = new Label();
+        lbl_txtEmpresa = new Label();
+        lbl_txtDireccion = new Label();
+        lbl_txtEmail = new Label();
+        lbl_txtTelefono = new Label();
+        lbl_txtNombre = new Label();
+        lbl_txtDocumento = new Label();
+        panelCampos = new Panel();
+        panelBotones = new FlowLayoutPanel();
+        dgvClientes = new DataGridView();
+        ((System.ComponentModel.ISupportInitialize)grilla).BeginInit();
+        panelCampos.SuspendLayout();
+        panelBotones.SuspendLayout();
+        ((System.ComponentModel.ISupportInitialize)dgvClientes).BeginInit();
+        SuspendLayout();
+        // 
+        // txtDocumento
+        // 
+        txtDocumento.Location = new Point(20, 22);
+        txtDocumento.Name = "txtDocumento";
+        txtDocumento.Size = new Size(220, 24);
+        txtDocumento.TabIndex = 0;
+        // 
+        // txtNombre
+        // 
+        txtNombre.Location = new Point(280, 22);
+        txtNombre.Name = "txtNombre";
+        txtNombre.Size = new Size(220, 24);
+        txtNombre.TabIndex = 2;
+        // 
+        // txtTelefono
+        // 
+        txtTelefono.Location = new Point(540, 22);
+        txtTelefono.Name = "txtTelefono";
+        txtTelefono.Size = new Size(220, 24);
+        txtTelefono.TabIndex = 4;
+        // 
+        // txtEmail
+        // 
+        txtEmail.Location = new Point(20, 92);
+        txtEmail.Name = "txtEmail";
+        txtEmail.Size = new Size(220, 24);
+        txtEmail.TabIndex = 6;
+        // 
+        // txtDireccion
+        // 
+        txtDireccion.Location = new Point(280, 92);
+        txtDireccion.Name = "txtDireccion";
+        txtDireccion.Size = new Size(220, 24);
+        txtDireccion.TabIndex = 8;
+        // 
+        // txtEmpresa
+        // 
+        txtEmpresa.Location = new Point(540, 92);
+        txtEmpresa.Name = "txtEmpresa";
+        txtEmpresa.Size = new Size(220, 24);
+        txtEmpresa.TabIndex = 10;
+        // 
+        // cmbTipo
+        // 
+        cmbTipo.DropDownStyle = ComboBoxStyle.DropDownList;
+        cmbTipo.Location = new Point(800, 22);
+        cmbTipo.Name = "cmbTipo";
+        cmbTipo.Size = new Size(210, 25);
+        cmbTipo.TabIndex = 12;
+        // 
+        // btnGuardar
+        // 
+        btnGuardar.BackColor = Color.FromArgb(35, 93, 150);
+        btnGuardar.FlatStyle = FlatStyle.Flat;
+        btnGuardar.ForeColor = Color.White;
+        btnGuardar.Location = new Point(13, 8);
+        btnGuardar.Margin = new Padding(8, 3, 8, 3);
+        btnGuardar.Name = "btnGuardar";
+        btnGuardar.Size = new Size(135, 38);
+        btnGuardar.TabIndex = 0;
+        btnGuardar.Text = "Guardar";
+        btnGuardar.UseVisualStyleBackColor = false;
+        btnGuardar.Click += btnGuardar_Click;
+        // 
+        // btnModificar
+        // 
+        btnModificar.BackColor = Color.FromArgb(35, 93, 150);
+        btnModificar.FlatStyle = FlatStyle.Flat;
+        btnModificar.ForeColor = Color.White;
+        btnModificar.Location = new Point(164, 8);
+        btnModificar.Margin = new Padding(8, 3, 8, 3);
+        btnModificar.Name = "btnModificar";
+        btnModificar.Size = new Size(135, 38);
+        btnModificar.TabIndex = 1;
+        btnModificar.Text = "Modificar";
+        btnModificar.UseVisualStyleBackColor = false;
+        // 
+        // btnEliminar
+        // 
+        btnEliminar.BackColor = Color.FromArgb(35, 93, 150);
+        btnEliminar.FlatStyle = FlatStyle.Flat;
+        btnEliminar.ForeColor = Color.White;
+        btnEliminar.Location = new Point(315, 8);
+        btnEliminar.Margin = new Padding(8, 3, 8, 3);
+        btnEliminar.Name = "btnEliminar";
+        btnEliminar.Size = new Size(135, 38);
+        btnEliminar.TabIndex = 2;
+        btnEliminar.Text = "Eliminar";
+        btnEliminar.UseVisualStyleBackColor = false;
+        // 
+        // btnLimpiar
+        // 
+        btnLimpiar.BackColor = Color.FromArgb(35, 93, 150);
+        btnLimpiar.FlatStyle = FlatStyle.Flat;
+        btnLimpiar.ForeColor = Color.White;
+        btnLimpiar.Location = new Point(466, 8);
+        btnLimpiar.Margin = new Padding(8, 3, 8, 3);
+        btnLimpiar.Name = "btnLimpiar";
+        btnLimpiar.Size = new Size(135, 38);
+        btnLimpiar.TabIndex = 3;
+        btnLimpiar.Text = "Limpiar";
+        btnLimpiar.UseVisualStyleBackColor = false;
+        // 
+        // btnActualizar
+        // 
+        btnActualizar.BackColor = Color.FromArgb(35, 93, 150);
+        btnActualizar.FlatStyle = FlatStyle.Flat;
+        btnActualizar.ForeColor = Color.White;
+        btnActualizar.Location = new Point(617, 8);
+        btnActualizar.Margin = new Padding(8, 3, 8, 3);
+        btnActualizar.Name = "btnActualizar";
+        btnActualizar.Size = new Size(135, 38);
+        btnActualizar.TabIndex = 4;
+        btnActualizar.Text = "Actualizar";
+        btnActualizar.UseVisualStyleBackColor = false;
+        // 
+        // grilla
+        // 
+        grilla.Location = new Point(0, 0);
+        grilla.Name = "grilla";
+        grilla.Size = new Size(240, 150);
+        grilla.TabIndex = 0;
+        // 
+        // lblTitulo
+        // 
+        lblTitulo.Font = new Font("Segoe UI", 18F, FontStyle.Bold);
+        lblTitulo.ForeColor = Color.FromArgb(35, 65, 95);
+        lblTitulo.Location = new Point(20, 15);
+        lblTitulo.Name = "lblTitulo";
+        lblTitulo.Size = new Size(1050, 42);
+        lblTitulo.TabIndex = 0;
+        lblTitulo.Text = "GESTIÓN DE CLIENTES";
+        lblTitulo.TextAlign = ContentAlignment.MiddleLeft;
+        // 
+        // lbl_cmbTipo
+        // 
+        lbl_cmbTipo.AutoSize = true;
+        lbl_cmbTipo.Location = new Point(800, 0);
+        lbl_cmbTipo.Name = "lbl_cmbTipo";
+        lbl_cmbTipo.Size = new Size(94, 17);
+        lbl_cmbTipo.TabIndex = 13;
+        lbl_cmbTipo.Text = "Tipo de cliente";
+        // 
+        // lbl_txtEmpresa
+        // 
+        lbl_txtEmpresa.AutoSize = true;
+        lbl_txtEmpresa.Location = new Point(540, 70);
+        lbl_txtEmpresa.Name = "lbl_txtEmpresa";
+        lbl_txtEmpresa.Size = new Size(159, 17);
+        lbl_txtEmpresa.TabIndex = 11;
+        lbl_txtEmpresa.Text = "Empresa (si corresponde)";
+        // 
+        // lbl_txtDireccion
+        // 
+        lbl_txtDireccion.AutoSize = true;
+        lbl_txtDireccion.Location = new Point(280, 70);
+        lbl_txtDireccion.Name = "lbl_txtDireccion";
+        lbl_txtDireccion.Size = new Size(62, 17);
+        lbl_txtDireccion.TabIndex = 9;
+        lbl_txtDireccion.Text = "Dirección";
+        // 
+        // lbl_txtEmail
+        // 
+        lbl_txtEmail.AutoSize = true;
+        lbl_txtEmail.Location = new Point(20, 70);
+        lbl_txtEmail.Name = "lbl_txtEmail";
+        lbl_txtEmail.Size = new Size(117, 17);
+        lbl_txtEmail.TabIndex = 7;
+        lbl_txtEmail.Text = "Correo electrónico";
+        // 
+        // lbl_txtTelefono
+        // 
+        lbl_txtTelefono.AutoSize = true;
+        lbl_txtTelefono.Location = new Point(540, 0);
+        lbl_txtTelefono.Name = "lbl_txtTelefono";
+        lbl_txtTelefono.Size = new Size(58, 17);
+        lbl_txtTelefono.TabIndex = 5;
+        lbl_txtTelefono.Text = "Teléfono";
+        // 
+        // lbl_txtNombre
+        // 
+        lbl_txtNombre.AutoSize = true;
+        lbl_txtNombre.Location = new Point(280, 0);
+        lbl_txtNombre.Name = "lbl_txtNombre";
+        lbl_txtNombre.Size = new Size(143, 17);
+        lbl_txtNombre.TabIndex = 3;
+        lbl_txtNombre.Text = "Nombre / Razón social";
+        // 
+        // lbl_txtDocumento
+        // 
+        lbl_txtDocumento.AutoSize = true;
+        lbl_txtDocumento.Location = new Point(20, 0);
+        lbl_txtDocumento.Name = "lbl_txtDocumento";
+        lbl_txtDocumento.Size = new Size(75, 17);
+        lbl_txtDocumento.TabIndex = 1;
+        lbl_txtDocumento.Text = "Documento";
+        // 
+        // panelCampos
+        // 
+        panelCampos.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
+        panelCampos.BackColor = Color.White;
+        panelCampos.BorderStyle = BorderStyle.FixedSingle;
+        panelCampos.Controls.Add(txtDocumento);
+        panelCampos.Controls.Add(lbl_txtDocumento);
+        panelCampos.Controls.Add(txtNombre);
+        panelCampos.Controls.Add(lbl_txtNombre);
+        panelCampos.Controls.Add(txtTelefono);
+        panelCampos.Controls.Add(lbl_txtTelefono);
+        panelCampos.Controls.Add(txtEmail);
+        panelCampos.Controls.Add(lbl_txtEmail);
+        panelCampos.Controls.Add(txtDireccion);
+        panelCampos.Controls.Add(lbl_txtDireccion);
+        panelCampos.Controls.Add(txtEmpresa);
+        panelCampos.Controls.Add(lbl_txtEmpresa);
+        panelCampos.Controls.Add(cmbTipo);
+        panelCampos.Controls.Add(lbl_cmbTipo);
+        panelCampos.Location = new Point(20, 65);
+        panelCampos.Name = "panelCampos";
+        panelCampos.Size = new Size(1050, 205);
+        panelCampos.TabIndex = 1;
+        // 
+        // panelBotones
+        // 
+        panelBotones.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
+        panelBotones.Controls.Add(btnGuardar);
+        panelBotones.Controls.Add(btnModificar);
+        panelBotones.Controls.Add(btnEliminar);
+        panelBotones.Controls.Add(btnLimpiar);
+        panelBotones.Controls.Add(btnActualizar);
+        panelBotones.Location = new Point(20, 285);
+        panelBotones.Name = "panelBotones";
+        panelBotones.Padding = new Padding(5);
+        panelBotones.Size = new Size(1050, 55);
+        panelBotones.TabIndex = 2;
+        panelBotones.WrapContents = false;
+        // 
+        // dgvClientes
+        // 
+        dgvClientes.BackgroundColor = SystemColors.ButtonHighlight;
+        dgvClientes.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+        dgvClientes.Location = new Point(20, 346);
+        dgvClientes.Name = "dgvClientes";
+        dgvClientes.Size = new Size(1050, 362);
+        dgvClientes.TabIndex = 3;
+        // 
+        // ClientesForm
+        // 
+        AutoScaleDimensions = new SizeF(7F, 17F);
+        AutoScaleMode = AutoScaleMode.Font;
+        BackColor = Color.FromArgb(245, 247, 250);
+        ClientSize = new Size(1100, 720);
+        Controls.Add(dgvClientes);
+        Controls.Add(lblTitulo);
+        Controls.Add(panelCampos);
+        Controls.Add(panelBotones);
+        Font = new Font("Segoe UI", 9.5F);
+        MinimumSize = new Size(950, 650);
+        Name = "ClientesForm";
+        StartPosition = FormStartPosition.CenterScreen;
+        Text = "Gestión de clientes";
+        Load += ClientesForm_Load;
+        ((System.ComponentModel.ISupportInitialize)grilla).EndInit();
+        panelCampos.ResumeLayout(false);
+        panelCampos.PerformLayout();
+        panelBotones.ResumeLayout(false);
+        ((System.ComponentModel.ISupportInitialize)dgvClientes).EndInit();
+        ResumeLayout(false);
+
     }
+
+    private DataGridView dgvClientes;
 }

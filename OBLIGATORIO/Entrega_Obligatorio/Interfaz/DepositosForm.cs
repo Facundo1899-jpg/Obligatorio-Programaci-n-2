@@ -140,4 +140,9 @@ public partial class DepositosForm : Form
         txtObservaciones.Clear();
         grilla.ClearSelection();
     }
+
+    private void btnGuardar_Click(object sender, EventArgs e)
+    {
+
+    }
 }

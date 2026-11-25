@@ -1,7 +1,9 @@
 using Entities;
 using Persistencia;
-
+using Datos;
 namespace Interfaz;
+using System.Data;
+using Microsoft.Data.SqlClient;
 
 public partial class ClientesForm : Form
 {
@@ -166,5 +168,29 @@ public partial class ClientesForm : Form
         txtDireccion.Clear();
         txtEmpresa.Clear();
         grilla.ClearSelection();
+    }
+
+    private void btnGuardar_Click(object sender, EventArgs e)
+    {
+        Cliente cliente = new Cliente();
+        cliente.Tipo = cmbTipo.Text;
+        cliente.Documento = txtDocumento.Text;
+        cliente.Nombre = txtNombre.Text;
+        cliente.Telefono = txtTelefono.Text;
+        cliente.Email = txtEmail.Text;
+        cliente.Direccion = txtDireccion.Text;
+        cliente.Empresa = txtEmpresa.Text;
+
+        DatosGestion datos = new DatosGestion();
+        datos.GuardarCliente(cliente);
+        dgvClientes.DataSource = datos.ListarClientes();
+
+        MessageBox.Show("El cliente fue guardado con exito");
+    }
+
+    private void ClientesForm_Load(object sender, EventArgs e)
+    {
+        DatosGestion datos = new DatosGestion();
+        dgvClientes.DataSource = datos.ListarClientes();
     }
 }
