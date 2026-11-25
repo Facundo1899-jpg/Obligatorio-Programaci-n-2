@@ -1,0 +1,41 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\alexf\\OneDrive\\Escritorio\\CTC\\Semestre_2\\Programacion_2\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{180FEBAB-E8DF-15AD-FDB7-B59BDB63F6D6}|EjerciciosPractica\\EjerciciosPractica.csproj|c:\\users\\alexf\\onedrive\\escritorio\\ctc\\semestre_2\\programacion_2\\ejerciciospractica\\ejerciciospracticos\\practico1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{180FEBAB-E8DF-15AD-FDB7-B59BDB63F6D6}|EjerciciosPractica\\EjerciciosPractica.csproj|solutionrelative:ejerciciospractica\\ejerciciospracticos\\practico1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Practico1.cs",
+              "DocumentMoniker": "C:\\Users\\alexf\\OneDrive\\Escritorio\\CTC\\Semestre_2\\Programacion_2\\EjerciciosPractica\\EjerciciosPracticos\\Practico1.cs",
+              "RelativeDocumentMoniker": "EjerciciosPractica\\EjerciciosPracticos\\Practico1.cs",
+              "ToolTip": "C:\\Users\\alexf\\OneDrive\\Escritorio\\CTC\\Semestre_2\\Programacion_2\\EjerciciosPractica\\EjerciciosPracticos\\Practico1.cs*",
+              "RelativeToolTip": "EjerciciosPractica\\EjerciciosPracticos\\Practico1.cs*",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAaAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-17T22:36:57.846Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
